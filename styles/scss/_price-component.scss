@@ -1,4 +1,4 @@
-.card-prize {
+.card-price {
   width: 550px;
   background: $white;
   border-radius: 10px;
@@ -38,7 +38,7 @@
       }
     }
 
-    .prize-wrapper {
+    .price-wrapper {
       order: 2;
       width: 50%;
       align-self: flex-end;
@@ -49,7 +49,7 @@
       align-items: center;
       justify-content: space-between;
 
-      .prize {
+      .price {
         display: flex;
         align-items: center;
         letter-spacing: 2px;
@@ -247,13 +247,13 @@
         margin: 40px 0;
       }
 
-      .prize-wrapper {
+      .price-wrapper {
         order: 3;
         width: 100%;
         margin-top: 0;
         align-self: center;
         justify-content: center;
-        .prize span {
+        .price span {
           margin-right: 5px;
         }
       }
