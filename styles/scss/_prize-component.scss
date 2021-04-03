@@ -1,38 +1,55 @@
-.card-price {
+.card-prize {
   width: 550px;
   background: $white;
   border-radius: 10px;
   box-shadow: 0px 10px 20px 0px $color-shadow;
+
+  @include mobile {
+    width: 375px;
+  }
 
   &__top {
     width: 100%;
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #eaeefb;
-    padding: 50px 50px 0px 50px;
+    padding: 30px 50px 0px 50px;
 
-    &__view-wrapper {
+    .view-wrapper {
+      order: 1;
+      width: 50%;
+      align-self: flex-start;
+      margin-top: 40px;
       margin-bottom: 15px;
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
 
-      &__views,
-      &__price {
-        .value {
-          margin-right: 5px;
-        }
-      }
-
-      &__views {
+      .views {
         display: flex;
         align-items: center;
         letter-spacing: 2px;
         text-transform: uppercase;
-      }
 
-      &__price {
+        .value {
+          margin-right: 5px;
+        }
+      }
+    }
+
+    .prize-wrapper {
+      order: 2;
+      width: 50%;
+      align-self: flex-end;
+      margin-bottom: 15px;
+      margin-top: -60px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      .prize {
         display: flex;
         align-items: center;
         letter-spacing: 2px;
@@ -45,7 +62,8 @@
       }
     }
 
-    &__slider-wrapper {
+    .slider-wrapper {
+      order: 3;
       width: 100%;
       margin: 25px 0;
       display: flex;
@@ -121,7 +139,8 @@
       }
     }
 
-    &__toggle-wrapper {
+    .toggle-wrapper {
+      order: 4;
       width: 100%;
       margin-bottom: 15px;
       display: flex;
@@ -144,13 +163,16 @@
       }
 
       .yearly-billing {
-        span {
+        .discount {
           font-size: 0.9rem;
           border-radius: 8px;
           padding: 5px;
           color: $light-red;
           background-color: #feece7;
           font-weight: $font-weight-bold;
+          span {
+            display: inline-block;
+          }
         }
       }
     }
@@ -203,6 +225,59 @@
         background: $dark-desaturated-blue;
         color: $light-grayish-blue;
         cursor: pointer;
+      }
+    }
+  }
+
+  @include mobile {
+    &__top {
+      padding: 25px 25px 0 25px;
+
+      .view-wrapper {
+        order: 1;
+        width: 100%;
+        margin-top: 0;
+        align-self: center;
+        justify-content: center;
+      }
+
+      .slider-wrapper {
+        order: 2;
+        width: 100%;
+        margin: 40px 0;
+      }
+
+      .prize-wrapper {
+        order: 3;
+        width: 100%;
+        margin-top: 0;
+        align-self: center;
+        justify-content: center;
+        .prize span {
+          margin-right: 5px;
+        }
+      }
+
+      .toggle-wrapper {
+        justify-content: center;
+        .yearly-billing .discount span {
+          display: none;
+        }
+      }
+    }
+
+    &__bottom {
+      display: flex;
+      flex-direction: column;
+
+      &__perks {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+
+        .perk::before {
+          left: 25px;
+        }
       }
     }
   }

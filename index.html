@@ -9,10 +9,8 @@
   <link type="text/css" rel="stylesheet" href="./styles/style.css" />
 </head>
 <body>
-
   <!-- Wrapper -->
   <div class="wrapper">
-
     <!-- Header -->
     <section class="header">
       <!-- Title -->
@@ -22,30 +20,28 @@
       <!-- Background -->
       <img class="header__background" src="./images/pattern-circles.svg" alt="pattern-circles" />
     </section>
-
-    <!-- Price component -->
-    <section class="card-price">
-
+    <!-- prize component -->
+    <section class="card-prize">
       <!-- Top component -->
-      <div class="card-price__top">
-
-        <!-- Views / Price -->
-        <div class="card-price__top__view-wrapper">
-          <div class="card-price__top__view-wrapper__views">
+      <div class="card-prize__top">
+        <!-- Views -->
+        <div class="view-wrapper">
+          <div class="views">
             <span class="value" id="view-value">10K</span> pageviews
           </div>
-          <div class="card-price__top__view-wrapper__price">
-            <span class="value" id="price-value">$8.00</span> / month
+        </div>
+        <!-- prize -->
+        <div class="prize-wrapper">
+          <div class="prize">
+            <span class="value" id="prize-value">$8.00</span> / month
           </div>
         </div>
-
         <!-- Slider -->
-        <div class="card-price__top__slider-wrapper">
-          <input type="range" min="0" max="100" value="0" step="25" id="slider">
+        <div class="slider-wrapper">
+          <input id="slider" type="range" min="0" max="100" value="0" step="25">
         </div>
-
-        <!-- Price options -->
-        <div class="card-price__top__toggle-wrapper">
+        <!-- prize options -->
+        <div class="toggle-wrapper">
           <div class="monthly-billing">
             <p>Monthly Billing</p>
             <label for="toggle" id="monthly-switch" class="switch">
@@ -55,29 +51,25 @@
           </div>
           <div class="yearly-billing">
             <p>Yearly Billing</p>
-            <span>25% discount</span>
+            <div class="discount">-25%
+              <span>discount</span>
+            </div>
           </div>
         </div>
-
       </div>
-
       <!-- Bottom component-->
-      <div class="card-price__bottom">
-
+      <div class="card-prize__bottom">
         <!-- Perks -->
-        <div class="card-price__bottom__perks">
+        <div class="card-prize__bottom__perks">
           <div class="perk">Unlimited websites</div>
           <div class="perk">100% data ownership</div>
           <div class="perk">Email reports</div>
         </div>
-
         <!-- Trial -->
-        <div class="card-price__bottom__trial">
+        <div class="card-prize__bottom__trial">
           <div class="button">Start my trial</div>
         </div>
-
       </div>
-
     </section>
   </div>
   <!-- Attribution -->
