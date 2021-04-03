@@ -9,9 +9,75 @@
   <link type="text/css" rel="stylesheet" href="./styles/style.css" />
 </head>
 <body>
+
   <!-- Wrapper -->
   <div class="wrapper">
-    <section class="price">
+
+    <!-- Header -->
+    <section class="header">
+      <!-- Title -->
+      <h2 class="header__title">Simple, traffic-based pricing</h2>
+      <!-- Subtitle -->
+      <p class="header__subtitle">Sign-up our 30-day trial. No credit card required.</p>
+      <!-- Background -->
+      <img class="header__background" src="./images/pattern-circles.svg" alt="pattern-circles" />
+    </section>
+
+    <!-- Price component -->
+    <section class="card-price">
+
+      <!-- Top component -->
+      <div class="card-price__top">
+
+        <!-- Views / Price -->
+        <div class="card-price__top__view-wrapper">
+          <div class="card-price__top__view-wrapper__views">
+            <span class="value" id="view-value">10K</span> pageviews
+          </div>
+          <div class="card-price__top__view-wrapper__price">
+            <span class="value" id="price-value">$8.00</span> / month
+          </div>
+        </div>
+
+        <!-- Slider -->
+        <div class="card-price__top__slider-wrapper">
+          <input type="range" min="0" max="100" value="0" step="25" id="slider">
+        </div>
+
+        <!-- Price options -->
+        <div class="card-price__top__toggle-wrapper">
+          <div class="monthly-billing">
+            <p>Monthly Billing</p>
+            <label for="toggle" id="monthly-switch" class="switch">
+              <input type="checkbox" id="toggle" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="yearly-billing">
+            <p>Yearly Billing</p>
+            <span>25% discount</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom component-->
+      <div class="card-price__bottom">
+
+        <!-- Perks -->
+        <div class="card-price__bottom__perks">
+          <div class="perk">Unlimited websites</div>
+          <div class="perk">100% data ownership</div>
+          <div class="perk">Email reports</div>
+        </div>
+
+        <!-- Trial -->
+        <div class="card-price__bottom__trial">
+          <div class="button">Start my trial</div>
+        </div>
+
+      </div>
+
     </section>
   </div>
   <!-- Attribution -->

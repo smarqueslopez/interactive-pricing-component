@@ -1,0 +1,27 @@
+.wrapper {
+  background: url("../images/bg-pattern.svg") no-repeat;
+  background-color: #fafbff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  max-width: $vp-desktop;
+  margin: 0 auto;
+  box-shadow: 0px 0px 15px 2px $color-shadow;
+
+  &__attribution {
+    width: 100%;
+    margin-bottom: 2rem;
+    position: fixed;
+    text-align: center;
+    font-size: 11px;
+    bottom: 0;
+    a {
+      color: $link-blue;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
