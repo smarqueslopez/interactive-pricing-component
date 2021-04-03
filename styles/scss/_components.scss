@@ -1,0 +1,25 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  padding: 3.5rem 2.4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  &__attribution {
+    width: 100%;
+    margin-bottom: 2rem;
+    position: fixed;
+    text-align: center;
+    font-size: 11px;
+    bottom: 0;
+    a {
+      color: $link-blue;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

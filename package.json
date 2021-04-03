@@ -1,0 +1,27 @@
+{
+  "name": "interactive-pricing-component",
+  "version": "1.0.0",
+  "description": "Frontend Mentor - Interactive pricing component",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -w styles/scss -o styles --output-style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smarqueslopez/interactive-pricing-component.git"
+  },
+  "keywords": [
+    "challenge-solution-code",
+    "frontend-mentor-challenge"
+  ],
+  "author": "smarqueslopez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smarqueslopez/interactive-pricing-component/issues"
+  },
+  "homepage": "https://github.com/smarqueslopez/interactive-pricing-component#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
